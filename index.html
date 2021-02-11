@@ -28,10 +28,34 @@
                     </div>
             </div>
         </div>
-
     </section>
 
-    <script src="" async defer></script>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">OFFER</a></li>
+                <li><a href="#">CONATCT</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" id="menuBtn"/>
+
+
+    <script >
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        sideNav.style.right="-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+            }else{
+                sideNav.style.right="-250px"
+            }
+        }
+    </script>
 </body>
 
 </html>
