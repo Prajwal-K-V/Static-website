@@ -8,6 +8,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
     </head>
 
     <body>
@@ -36,22 +38,22 @@
         <nav id="sideNav">
             <ul>
                 <li>
-                    <a href="#">HOME</a>
+                    <a href="#header">HOME</a>
                 </li>
                 <li>
-                    <a href="#About">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#">FEATURES</a>
+                    <a href="#features">FEATURES</a>
                 </li>
                 <li>
-                    <a href="#">COURSES</a>
+                    <a href="#courses">COURSES</a>
                 </li>
                 <li>
-                    <a href="#">OFFER</a>
+                    <a href="#offer">OFFER</a>
                 </li>
                 <li>
-                    <a href="#">CONATCT</a>
+                    <a href="#contact">CONATCT</a>
                 </li>
             </ul>
         </nav>
@@ -168,10 +170,7 @@
                         <span class="line-3"></span>
 
                     </div>
-                    <h2>
-                        "Learning is not attained by chance ,it must be sought for with ardour  and attended to with deligence"
-                    </h2>
-                    <h3>----Abigail Adams</h3>
+                    
                     
                 </div>
             </div>
@@ -288,6 +287,11 @@
                     sideNav.style.right = "-250px"
                 }
             }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
         </script>
     </body>
 
