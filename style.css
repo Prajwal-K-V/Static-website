@@ -282,3 +282,38 @@ hr{
     font-size: 13px;
     color: #777777;
 }
+.footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer-logo img{
+
+    width: 100px;
+}
+
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin:0 auto 20px;
+    cursor: pointer;
+}
